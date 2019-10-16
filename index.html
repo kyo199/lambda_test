@@ -6,7 +6,7 @@
 	<body>
 		<input type="button" value="GET" onClick="get()"/>
 		<script>
-			const URL = "https://eqb3ko17h9.execute-api.ap-northeast-2.amazonaws.com/2019-10-15/board";
+			const URL = "https://eqb3ko17h9.execute-api.ap-northeast-2.amazonaws.com/2019-10-15/board"
 			function get() {
 				fetch(URL, {
 					headers: {
@@ -15,6 +15,7 @@
 				}).then(res => res.json())
 				  .then(data => console.log(data))
 				  .catch(err => console.error(err))
+			}
 		</script>
 	</body>
 </html>
