@@ -8,7 +8,7 @@ exports.handler = async (event, context, callback) => {
             }
             callback(null, {
                 'statusCode': 200,
-                'headers': {},
+                'headers': {'Access-Control-Allow-Origin': '*'},
                 'body': JSON.stringify(data)
             });
             break;
